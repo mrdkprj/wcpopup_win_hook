@@ -8,7 +8,8 @@ repository = "https://github.com/mrdkprj/wcpopup_win_hook"
 build="build.rs"
 links = "wcpopuphook"
 include = [
-    "/out"
+    "/out",
+    "build.rs"
 ]
 
 [lib]
