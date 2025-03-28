@@ -17,6 +17,9 @@ name = "wcpopup_win_hook"
 path = "src/lib.rs"
 # lib is required to set env
 crate-type = ["cdylib","lib"]
+targets = [
+  "x86_64-pc-windows-msvc"
+]
 
 [package.metadata.docs.rs]
 targets = [
