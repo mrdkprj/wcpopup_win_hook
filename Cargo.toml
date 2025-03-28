@@ -5,12 +5,14 @@ edition = "2021"
 description = "Hook DLL for wcpopup"
 license = "MIT"
 repository = "https://github.com/mrdkprj/wcpopup_win_hook"
+build="build.rs"
 links = "wcpopuphook"
 include = [
     "/out"
 ]
 
 [lib]
+name = "wcpopup_win_hook"
 path = "src/lib.rs"
 # lib is required to set env
 crate-type = ["cdylib","lib"]
