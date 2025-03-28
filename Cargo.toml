@@ -9,7 +9,8 @@ build="build.rs"
 links = "wcpopuphook"
 include = [
     "/out",
-    "build.rs"
+    "build.rs",
+    "src/lib.rs"
 ]
 
 [lib]
