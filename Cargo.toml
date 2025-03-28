@@ -1,0 +1,29 @@
+[package]
+name = "wcpopup_win_hook"
+version = "0.1.0"
+edition = "2021"
+links = "wcpopuphook"
+
+[lib]
+path = "src/lib.rs"
+# lib is required to set env
+crate-type = ["cdylib","lib"]
+
+[target.'cfg(target_os = "windows")'.dependencies.windows]
+version = "0.60"
+features = [
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging",
+]
+
+[profile.release]
+opt-level = "s"
+debug = false
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = 'unwind'
+incremental = false
+codegen-units = 1
+rpath = false
