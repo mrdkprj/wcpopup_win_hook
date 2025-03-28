@@ -7,11 +7,6 @@ license = "MIT"
 repository = "https://github.com/mrdkprj/wcpopup_win_hook"
 build="build.rs"
 links = "wcpopuphook"
-include = [
-    "/out",
-    "build.rs",
-    "src/lib.rs"
-]
 
 [lib]
 name = "wcpopup_win_hook"
